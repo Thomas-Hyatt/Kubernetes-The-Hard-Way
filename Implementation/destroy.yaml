@@ -1,0 +1,17 @@
+- name: Destroy DigitalOcean Droplet
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  vars_files:
+    - configs.yaml
+    - credentials.yaml
+
+  tasks:
+    - name: Delete Droplet
+      digitalocean.cloud.droplet:
+        token: "{{ do_token }}"
+        state: absent
+        name: "{{ droplet_name }}"
+        region: "{{ region }}"
+        unique_name: true

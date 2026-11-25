@@ -1,0 +1,20 @@
+# Shared Configs
+region: tor1
+image: "debian-13-x64"  
+ssh_key_id: "12:cf:c8:b4:38:f4:01:02:b6:6a:e5:16:e9:2f:c5:99"
+
+# Jumpbox Configs
+jumpbox_name: "jumpbox"
+jumpbox_size: "s-1vcpu-512mb-10gb"
+
+# Server Configs
+server_name: "server"
+server_size: "s-1vcpu-2gb"
+
+# Node 0 Configs
+node_0_name: "node-0"
+node_0_size: "s-1vcpu-2gb"
+
+# Node 1 Configs
+node_1_name: "node-1"
+node_1_size: "s-1vcpu-2gb"
